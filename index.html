@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>NEON TETRIS</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="intro-screen">
+  <div class="intro-content">
+    <div class="logo-container">
+      <div class="dev-logo">DEVS OF TOMORROW</div>
+    </div>
+    <div class="credits">
+      <div class="credit-text">DEVELOPED & DESIGNED BY</div>
+      <div class="developer-name">AMIN SHAN</div>
+    </div>
+  </div>
+</div>
+
+<div class="game-container" style="display: none;">
+  <h1>NEON TETRIS</h1>
+  <div class="game-layout">
+    <div class="game-area">
+      <canvas id="tetris-canvas" width="240" height="400"></canvas>
+      <div class="game-info">
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+        <div id="lines">Lines: 0</div>
+      </div>
+    </div>
+    
+    <div class="sidebar">
+      <div class="preview-container">
+        <h3>NEXT</h3>
+        <canvas id="preview-canvas" width="80" height="80"></canvas>
+      </div>
+      
+      <div class="controls-container">
+        <h3>CONTROLS</h3>
+        <div class="controls-text">
+          <div>← → Move</div>
+          <div>↑ Rotate</div>
+          <div>↓ Soft Drop</div>
+          <div>SPACE Hard Drop</div>
+        </div>
+      </div>
+      
+      <button id="start-button">Start Game</button>
+      <button id="pause-button" style="display: none;">Pause</button>
+    </div>
+  </div>
+  
+  <div class="credits-footer">
+    <div class="neon-text">Created by Amin Shan</div>
+    <div class="neon-text">Devs of Tomorrow</div>
+  </div>
+</div>
+
+<script src="intro.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
